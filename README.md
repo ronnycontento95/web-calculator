@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Price Calculator 🧮💲
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Price Calculator**! This is a web app built with **React**, **Vite**, and **Tailwind CSS** that allows you to calculate prices quickly and efficiently. Perfect for handling subtotal, tip, and total calculations on orders or transactions.
 
-Currently, two official plugins are available:
+## Key Features ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Subtotal Calculation**: Add the cost of all items in an order.
+- **Tip Calculation**: Add a tip percentage to the subtotal.
+- **Total Calculation**: Get the total amount to pay by adding the subtotal and tip.
+- **Modern and Responsive Interface**: Clean and adaptable design for any device, thanks to Tailwind CSS.
+- **Optimized Performance**: Developed with Vite for a fast development experience and efficient performance.
 
-## Expanding the ESLint configuration
+## Screenshots 🖼️
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Screenshot 1](/screenshots/screenshot1.png)
+*Main calculator interface.*
 
-- Configure the top-level `parserOptions` property like this:
+![Screenshot 2](/screenshots/screenshot2.png)
+*Example of subtotal, tip, and total calculation.*
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Technologies used 🛠️
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React**: JavaScript library for building interactive user interfaces.
+- **Vite**: Fast and modern development environment for web applications.
+- **Tailwind CSS**: Utility CSS framework for efficiently designing interfaces.
+- **TypeScript** (optional): Adds static types to improve code quality.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation and use 🚀
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Follow these steps to run the project on your local machine:
+
+1. **Clone the repository**:
+```bash
+git clone https://github.com/your-user/price-calculator.git
